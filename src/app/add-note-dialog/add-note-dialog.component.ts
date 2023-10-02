@@ -20,6 +20,7 @@ export class AddNoteDialogComponent {
     this.addDialogClosed.emit(false);
   }
 
+
   addNote() {
     let note: Note = {
       type: 'note',
@@ -31,4 +32,5 @@ export class AddNoteDialogComponent {
     //beachte das closeDialog() zum Schluss kommt, denn es leert die Variablen
     this.closeDialog();
   }
+  
 }
